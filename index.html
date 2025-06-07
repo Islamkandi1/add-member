@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="add custom of your conmpany " />
+    <meta name="author" content="islam kandil" />
+    <title>add custom</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="members">
+      <section class="container-fluid pt-4">
+        <section
+          class="add-search d-flex justify-content-between align-items-center px-4 mb-4"
+        >
+          <button
+            type="button"
+            id="add-member"
+            class="text-capitalize border-0 rounded-pill px-4 py-2 add-member"
+          >
+            add new member
+          </button>
+          <input
+            type="search"
+            id="search"
+            class="search rounded-pill border-0"
+            placeholder="search..."
+          />
+        </section>
+        <section class="my-btn d-flex justify-content-center align-items-center mb-3">
+          <button type="btn" class="btn btn-primary text-capitalize w-75 d-none" id="delete-all">delete all</button>
+
+        </section>
+        <table class="w-100 text-center">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>picture</th>
+              <th>full name</th>
+              <th>age</th>
+              <th>city</th>
+              <th>position</th>
+              <th>email</th>
+              <th>phone</th>
+              <th>actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+          <p id="no-members" class="mt-4 fw-bold text-capitalize text-center"></p>
+      </section>
+    </main>
+    <main
+      id="all-box"
+      class="d-flex justify-content-center align-items-center d-none box-all"
+    >
+      <section class="box w-50 position-relative" id="mini-box">
+        <i class="fa-solid fa-xmark text-primary" id="x-mark"></i>
+        <form action="" class="text-center" id="form">
+          <div class="row row-cols-2">
+            <section class="col">
+              <input class="input form-control " 
+                type="text"
+                name="f-name"
+                id="f-name"
+                placeholder="first name"
+              />
+            </section>
+            <section class="col">
+              <input class=" form-control input" 
+                type="text"
+                name="l-name"
+                id="l-name"
+                placeholder="last name"
+              />
+            </section>
+            <section class="col">
+              <input class="form-control input"  type="number" name="age" id="age" placeholder="age" />
+            </section>
+            <section class="col">
+              <input class=" form-control input"  type="text" name="city" id="city" placeholder="city" />
+            </section>
+            <section class="col">
+              <input class=" form-control input" 
+                type="text"
+                name="position"
+                id="position"
+                placeholder="position"
+              />
+            </section>
+            <section class="col">
+              <input class="form-control input"  type="email" name="email" id="email" placeholder="email" />
+            </section>
+            <section>
+              <input class="form-control input" class="col"  type="tel" name="phone" id="phone" placeholder="phone" />
+            </section>
+            <section >
+              <input  type="file" class="w-100 bg-light input form-control" id="image" />
+            </section>
+          </div>
+          <p id="wrong" class="text-light text-capitalize  rounded-3"></p>
+          <button type="submit" class="btn btn-primary text-capitalize px-4" id="submit">
+            add member
+          </button>
+        </form>
+      </section>
+    </main>
+    <main id="img-contain" class="d-flex justify-content-center align-items-center  box-all d-none">
+      <section class="box img-box w-50 position-relative d-flex justify-content-between align-items-center" id="img-box">
+        <i class="fa-solid fa-arrow-left" id="prev"></i>
+        <i class="fa-solid fa-xmark" id="x-mark"></i>
+        <i class="fa-solid fa-arrow-right" id="next"></i>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

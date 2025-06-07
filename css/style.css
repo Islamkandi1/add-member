@@ -1,0 +1,96 @@
+.members {
+  background-color: var(--main-color);
+  min-height: 100dvh;
+  .add-member {
+    color: var(--main-color);
+    background-color: var(--second-color);
+    transition: all 0.4s;
+    &:hover {
+      background-color: #72b4e7;
+    }
+  }
+  .search {
+    width: 30%;
+    padding: 0.5rem 1rem;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    outline: none;
+  }
+  ::placeholder {
+    color: var(--main-color);
+  }
+  table {
+    color: var(--first-color);
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  th {
+    text-transform: capitalize;
+  }
+  th,
+  td {
+    padding: 0.5rem 0;
+  }
+  td {
+    font-weight: 600;
+  }
+  i {
+    margin: 0 0.2rem;
+    padding: 0.4rem;
+    border-radius: 8px;
+  }
+}
+.box-all {
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #00000082;
+  .box {
+    background-color: #ffffff;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    border-radius: 15px;
+    #x-mark {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    i {
+      color: var(--second-color);
+      font-size: 1.5rem;
+    }
+  }
+  input {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 10px;
+    outline: 0;
+    border: 2px solid #1b77e8;
+  }
+  ::placeholder {
+    text-transform: capitalize;
+  }
+}
+i {
+  cursor: pointer;
+}
+.img-box {
+  background-image: url("./../images/chefs-3.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  i {
+    font-size: 2rem;
+  }
+}
+#wrong{
+  background-color: rgb(250, 29, 29);
+}
+
