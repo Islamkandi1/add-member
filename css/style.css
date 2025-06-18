@@ -55,6 +55,7 @@
     padding: 1rem;
     padding-top: 2.5rem;
     border-radius: 15px;
+    width: 100%;
     #x-mark {
       position: absolute;
       top: 10px;
@@ -91,6 +92,11 @@ i {
   }
 }
 #wrong{
-  background-color: rgb(250, 29, 29);
+  background-color: #fa1d1d;
+}
+@media screen and (width >=768px) {
+  .box-all .box{
+    width: 60%;
+  }
 }
 
