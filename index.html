@@ -15,7 +15,7 @@
     <main class="members">
       <section class="container-fluid pt-4">
         <section
-          class="add-search d-flex justify-content-between align-items-center px-4 mb-4"
+          class="add-search flex-wrap d-flex justify-content-between align-items-center gap-3 px-4 mb-4 "
         >
           <button
             type="button"
@@ -27,31 +27,33 @@
           <input
             type="search"
             id="search"
-            class="search rounded-pill border-0"
+            class="search rounded-pill border-0 flex-grow-1 flex-sm-grow-0"
             placeholder="search..."
           />
         </section>
-        <section class="my-btn d-flex justify-content-center align-items-center mb-3">
+        <section class="my-btn d-flex  justify-content-center align-items-center mb-3">
           <button type="btn" class="btn btn-primary text-capitalize w-75 d-none" id="delete-all">delete all</button>
 
         </section>
-        <table class="w-100 text-center">
-          <thead>
-            <tr>
-              <th>id</th>
-              <th>picture</th>
-              <th>full name</th>
-              <th>age</th>
-              <th>city</th>
-              <th>position</th>
-              <th>email</th>
-              <th>phone</th>
-              <th>actions</th>
-            </tr>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
-          <p id="no-members" class="mt-4 fw-bold text-capitalize text-center"></p>
+        <sectio class="table-contain">
+          <table class="w-100 text-center">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>picture</th>
+                <th>full name</th>
+                <th>age</th>
+                <th>city</th>
+                <th>position</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>actions</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+            <p id="no-members" class="mt-4 fw-bold text-capitalize text-center"></p>
+        </sectio>
       </section>
     </main>
     <main
@@ -110,7 +112,7 @@
       </section>
     </main>
     <main id="img-contain" class="d-flex justify-content-center align-items-center  box-all d-none">
-      <section class="box img-box w-50 position-relative d-flex justify-content-between align-items-center" id="img-box">
+      <section class="box img-box position-relative d-flex justify-content-between align-items-center" id="img-box">
         <i class="fa-solid fa-arrow-left" id="prev"></i>
         <i class="fa-solid fa-xmark" id="x-mark"></i>
         <i class="fa-solid fa-arrow-right" id="next"></i>
